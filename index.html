@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 Yıldır Birlikteyiz ❤️</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="heart-cursor"></div>
+
+    <div class="falling-hearts"></div>
+
+    <div class="container">
+      <header class="header">
+        <h1 class="main-title">❤️Dolu Dolu 2 Yıl ❤️</h1>
+        <p class="subtitle">Seninle her gün, hayatımın en güzel günü.</p>
+      </header>
+      <div class="circle-image-group">
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/img/circle1mobile.jpg"
+            />
+            <img src="assets/img/circle1.JPG" alt="Circle 1" />
+          </picture>
+        </div>
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/img/circle2mobile.jpg"
+            />
+            <img src="assets/img/circle2.JPG" alt="Circle 2" />
+          </picture>
+        </div>
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/img/circle3mobile.jpg"
+            />
+            <img src="assets/img/circle3.JPG" alt="Circle 3" />
+          </picture>
+        </div>
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/img/circle4mobile.jpg"
+            />
+            <img src="assets/img/circle4.JPG" alt="Circle 4" />
+          </picture>
+        </div>
+      </div>
+
+      <button class="love-button" onclick="love()">Seni Seviyorum 💕</button>
+
+      <div class="envelope-wrapper">
+        <div class="envelope-title">
+          <h3>💌 Benden Sana Bir Mektup 💌</h3>
+          <p>Görmek için zarfa tıkla</p>
+        </div>
+        <div id="envelope" class="close">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter">
+            <div class="words line1">Herşeyim,</div>
+            <div class="words line2">
+              Seninle hayatımın en güzel masalı başladı. Gülüşün kalbimi
+              ısıtıyor, sesin dünyamı aydınlatıyor.Her an seni düşünmek, seninle
+              olmak en büyük mutluluğum.Seni sevmek, en tatlı alışkanlığım oldu.
+              İyi ki hayatımdasın, iyi ki benimlesin. Seni sevmek, en tatlı
+              alışkanlığım oldu. İyi ki hayatımdasın, iyi ki benimlesin.
+            </div>
+            <div class="words line3">Sonsuza kadar seninle.</div>
+          </div>
+          <div class="envelope-hearts">
+            <div class="envelope-heart a1"></div>
+            <div class="envelope-heart a2"></div>
+            <div class="envelope-heart a3"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="gallery-section fade-in">
+        <h2 class="gallery-title">Hayatımın En Mutlu Karelerinden Örnekler</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <a href="assets/img/galery1.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery1.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery2.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery2.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery3.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery3.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery4.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery4.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery5.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery5.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery6.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery6.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery7.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery7.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="assets/img/galery8.JPG" data-lightbox="gallery">
+              <img src="assets/img/galery8.JPG" alt="Galeri fotoğrafı" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="memories-section fade-in">
+        <h2 class="memories-title">Anılarımız</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">İlk Tanışma</div>
+            <div class="timeline-content">
+              29 Ocak 2023… Seninle babanın(m) dükkanında tanıştık. İkimiz de
+              çalışıyorduk. O gün seni ilk kez gördüm. Ve bilmeden, içimden bir
+              şeyler değişmeye başladı. Meğer hayatım siyah beyazmış… Sen
+              girince renklenmeye başlamış. Sessizce, sakince ama çok derinden…
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">İlk Buluşma</div>
+            <div class="timeline-content">
+              15 Ağustos 2023... Eniştemin eczanesine hayırlı olsuna gittik.
+              Aslında ilk buluşma bile değildi ama o gün, çıkışta beraber
+              içtiğimiz limonata hayatımın en tatlı ve en özel anlarının
+              başlangıcı oldu.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">İlk Yıl</div>
+            <div class="timeline-content">
+              İlk yılımızda aklımıza bile gelmeyecek bir şey oldu: Beraber
+              Kosova’ya gittik! Hayat bize küçük sürprizler yapmayı seviyor
+              demek ki. O yolculuk, birlikte geçirdiğimiz en güzel anlardan
+              biriydi. Her anımız, kahkahalarımız, paylaştığımız küçük
+              mutluluklar… Hepsi aşkımızı daha da güçlendirdi. İyi ki varsın,
+              iyi ki benimlesin..
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Bugün</div>
+            <div class="timeline-content">
+              Bugün… Sen benim her şeyimsin. Her gün sana olan sevgim biraz daha
+              büyüyor, derinleşiyor, sonsuzlaşıyor. Seninle olmak, hayatımın en
+              güzel ve en gerçek hali. Her sabah uyanıp seni düşünmek, seninle
+              geleceği hayal etmek… İyi ki sen.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="celebration-button" onclick="celebrate()">
+        🎉 Kutlama Zamanı! 🎊
+      </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+
+<div class="curtain-overlay">
+  <div class="curtain-left"></div>
+  <div class="curtain-right"></div>
+  <div class="curtain-content">
+    <div class="loading-text">
+      <h2>💕 Hoş Geldin 💕</h2>
+      <p>Hayatımın En güzel 2 Yılına</p>
+      <div class="loading-hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<audio id="loveAudio" preload="auto">
+  <source src="./assets/audio/audio.mp3" type="audio/mpeg" />
+  Tarayıcınız audio elementini desteklemiyor.
+</audio>
