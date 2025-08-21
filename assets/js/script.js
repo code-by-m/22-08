@@ -1,24 +1,15 @@
-// Mobil cihaz algılama
+
 const isMobile = () => {
   return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 };
 
-// Touch cihaz algılama
+
 const isTouchDevice = () => {
   return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 };
 
-// Performans ayarları
-const MOBILE_SETTINGS = {
-  heartInterval: isMobile() ? 1000 : 300,
-  maxHearts: isMobile() ? 3 : 10,
-  reducedAnimations: isMobile()
-};
-
-// Heart cursor - sadece bir kez tanımla
 const cursor = document.querySelector(".heart-cursor");
 
-// Cursor sadece desktop'ta çalışsın
 if (!isMobile() && !isTouchDevice()) {
   document.addEventListener("mousemove", (e) => {
     cursor.style.left = e.clientX + "px";
@@ -29,7 +20,6 @@ if (!isMobile() && !isTouchDevice()) {
   if (cursor) cursor.style.display = 'none';
 }
 
-// Observer options
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -71,7 +61,6 @@ function createFallingHearts() {
   }, 5000);
 }
 
-// Mobil-aware interval
 setInterval(createFallingHearts, MOBILE_SETTINGS.heartInterval);
 
 function createConfetti() {
@@ -912,3 +901,4 @@ function celebrate() {
     createScreenShake();
   }
 }
+
