@@ -166,7 +166,7 @@ body.blue-theme {
   }
 
   .circle-image-group .image:nth-child(1) {
-    background-image: url(../img/circle1mobile.JPG);
+    background-image: url(../img/circle1mobile.jpg);
   }
 
   .circle-image-group .image:nth-child(2) {
@@ -178,7 +178,7 @@ body.blue-theme {
   }
 
   .circle-image-group .image:last-child {
-    background-image: url(../img/circle4mobile.JPG);
+    background-image: url(../img/circle4mobile.jpg);
   }
 
   .circle-image-group .image:hover {
@@ -199,7 +199,7 @@ body.blue-theme {
   }
 
   .circle-image-group .image:nth-child(1) {
-    background-image: url(../img/circle1mobile.JPG);
+    background-image: url(../img/circle1mobile.jpg);
   }
 
   .circle-image-group .image:nth-child(2) {
@@ -211,7 +211,7 @@ body.blue-theme {
   }
 
   .circle-image-group .image:last-child {
-    background-image: url(../img/circle4mobile.JPG);
+    background-image: url(../img/circle4mobile.jpg);
   }
 
   .circle-image-group .image:hover {
@@ -2473,4 +2473,5 @@ html {
     opacity: 0;
   }
 }
+
 
