@@ -166,19 +166,19 @@ body.blue-theme {
   }
 
   .circle-image-group .image:nth-child(1) {
-    background-image: url(../img/circle1mobile.jpg);
+    background-image: url(../img/circle1mobile.JPG);
   }
 
   .circle-image-group .image:nth-child(2) {
-    background-image: url(../img/circle2mobile.jpg);
+    background-image: url(../img/circle2mobile.JPG);
   }
 
   .circle-image-group .image:nth-child(3) {
-    background-image: url(../img/circle3mobile.jpg);
+    background-image: url(../img/circle3mobile.JPG);
   }
 
   .circle-image-group .image:last-child {
-    background-image: url(../img/circle4mobile.jpg);
+    background-image: url(../img/circle4mobile.JPG);
   }
 
   .circle-image-group .image:hover {
@@ -199,19 +199,19 @@ body.blue-theme {
   }
 
   .circle-image-group .image:nth-child(1) {
-    background-image: url(../img/circle1mobile.jpg);
+    background-image: url(../img/circle1mobile.JPG);
   }
 
   .circle-image-group .image:nth-child(2) {
-    background-image: url(../img/circle2mobile.jpg);
+    background-image: url(../img/circle2mobile.JPG);
   }
 
   .circle-image-group .image:nth-child(3) {
-    background-image: url(../img/circle3mobile.jpg);
+    background-image: url(../img/circle3mobile.JPG);
   }
 
   .circle-image-group .image:last-child {
-    background-image: url(../img/circle4mobile.jpg);
+    background-image: url(../img/circle4mobile.JPG);
   }
 
   .circle-image-group .image:hover {
@@ -2473,3 +2473,4 @@ html {
     opacity: 0;
   }
 }
+
