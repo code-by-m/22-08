@@ -1,11 +1,15 @@
-
 const isMobile = () => {
   return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 };
 
-
 const isTouchDevice = () => {
   return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+};
+
+const MOBILE_SETTINGS = {
+  heartInterval: isMobile() ? 1000 : 300,
+  maxHearts: isMobile() ? 3 : 10,
+  reducedAnimations: isMobile()
 };
 
 const cursor = document.querySelector(".heart-cursor");
@@ -16,7 +20,6 @@ if (!isMobile() && !isTouchDevice()) {
     cursor.style.top = e.clientY + "px";
   });
 } else {
-  // Mobilde cursor'u gizle
   if (cursor) cursor.style.display = 'none';
 }
 
@@ -901,4 +904,5 @@ function celebrate() {
     createScreenShake();
   }
 }
+
 
